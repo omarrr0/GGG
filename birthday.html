@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد سعيد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinning-star">✨</div>
+            <p class="loading-text">أحلى مسا على عمنا الي تم 19 سنة❤️</p>
+        </div>
+    </div>
+
+    <!-- Starry Background -->
+    <div id="starsContainer" class="stars-container"></div>
+
+    <!-- Main Content Container -->
+    <div id="mainContent" class="main-content hidden">
+        
+        <!-- First Message: Going back in time -->
+        <div id="firstMessage" class="message-container hidden">
+            <p id="line1" class="typewriter-text"></p>
+            <p id="line2" class="typewriter-text"></p>
+            <p id="line3" class="typewriter-text date-text"></p>
+        </div>
+
+        <!-- Second Message with Moon -->
+        <div id="secondMessage" class="message-container hidden">
+            <div class="moon-container">
+                <img id="moonImage" src="Ahela.jpeg" alt="صورة القمر" class="moon-image hidden" />
+            </div>
+            <p id="moonLine1" class="typewriter-text"></p>
+            <p id="moonLine2" class="typewriter-text"></p>
+            <p id="moonLine3" class="typewriter-text"></p>
+        </div>
+
+        <!-- Third Message -->
+        <div id="thirdMessage" class="message-container hidden">
+            <p id="thirdLine1" class="typewriter-text"></p>
+            <p id="thirdLine2" class="typewriter-text heart-text"></p>
+        </div>
+
+        <!-- Celebration Effects -->
+        <div id="celebrationContainer" class="celebration-container hidden">
+            <div id="confetti"></div>
+            <div id="stars"></div>
+            <div id="sparkles"></div>
+        </div>
+
+        <!-- Final Big Message -->
+        <div id="finalMessage" class="final-message hidden">
+            <h1 class="final-text glowing">كل سنة وانتي طيبة وبخير يعم وربنا يفرح قلبك ويدعيكي كل الي نفسك فيه وبإذن الله اشوفك دايمًا مبسوطة وبخير❤️</h1>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
